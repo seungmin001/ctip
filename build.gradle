@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id "org.sonarqube" version "3.1.1"
+    id "org.sonarqube" version "3.2.0"
     id "checkstyle"
     id "pmd"
     id "jacoco"
@@ -20,12 +20,13 @@ dependencies {
     testImplementation(group: "junit", name: "junit", version: "4.13.2")
 }
 
+
 sonarqube {
-    properties {
-        property "sonar.projectKey", "sys09270883_ctip"
-        property "sonar.organization", "sys09270883"
-        property "sonar.host.url", "https://sonarcloud.io"
-    }
+  properties {
+    property "sonar.projectKey", "dfasdfasdfasdfsadfsadf"
+    property "sonar.organization", "seungmin001"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 jacoco {
